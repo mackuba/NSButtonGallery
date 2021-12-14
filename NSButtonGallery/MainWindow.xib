@@ -254,7 +254,7 @@ DQ
                         </segmentedCell>
                     </segmentedControl>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="UPR-fo-qhS">
-                        <rect key="frame" x="642" y="147" width="48" height="48"/>
+                        <rect key="frame" x="742" y="147" width="48" height="48"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48" id="33W-aF-bld"/>
                             <constraint firstAttribute="width" constant="48" id="8pg-c9-H0w"/>
@@ -265,7 +265,7 @@ DQ
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="et0-vS-UbQ">
-                        <rect key="frame" x="642" y="82" width="48" height="48"/>
+                        <rect key="frame" x="742" y="82" width="48" height="48"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="48" id="8YH-JL-ciJ"/>
                             <constraint firstAttribute="height" constant="48" id="P9I-9d-5XL"/>
@@ -346,17 +346,6 @@ DQ
                             <font key="font" metaFont="label"/>
                         </buttonCell>
                     </button>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="OnC-wu-Ny9">
-                        <rect key="frame" x="477" y="244" width="60" height="53"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="48" id="oOY-6v-PLf"/>
-                            <constraint firstAttribute="width" constant="56" id="t1T-WH-9im"/>
-                        </constraints>
-                        <buttonCell key="cell" type="bevel" title="bevel" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1BI-yo-1tj">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system" size="10"/>
-                        </buttonCell>
-                    </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="7ME-K9-oIC">
                         <rect key="frame" x="477" y="174" width="60" height="53"/>
                         <constraints>
@@ -364,6 +353,43 @@ DQ
                             <constraint firstAttribute="height" constant="48" id="e4d-vv-bBA"/>
                         </constraints>
                         <buttonCell key="cell" type="bevel" title="bevel" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dvS-Xl-bef">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-aU-e2J">
+                        <rect key="frame" x="607" y="243" width="80" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="76" id="CGP-E6-pZM"/>
+                            <constraint firstAttribute="height" constant="50" id="nfR-je-hx8"/>
+                        </constraints>
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uJ0-IC-4Jr">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <string key="title">Bevel
+Button</string>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-ET-ajG">
+                        <rect key="frame" x="607" y="172" width="80" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0vX-vt-nB3"/>
+                            <constraint firstAttribute="width" constant="76" id="djk-kI-Equ"/>
+                        </constraints>
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4w4-3S-8Qp">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <string key="title">Bevel
+Button</string>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="OnC-wu-Ny9">
+                        <rect key="frame" x="477" y="244" width="60" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="oOY-6v-PLf"/>
+                            <constraint firstAttribute="width" constant="56" id="t1T-WH-9im"/>
+                        </constraints>
+                        <buttonCell key="cell" type="bevel" title="bevel" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1BI-yo-1tj">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system" size="10"/>
                         </buttonCell>
@@ -387,7 +413,7 @@ DQ
                     <constraint firstItem="N13-IH-l3N" firstAttribute="centerX" secondItem="miy-ml-b7E" secondAttribute="centerX" id="6Uq-3f-0sT"/>
                     <constraint firstItem="alg-Ci-Nyo" firstAttribute="top" secondItem="edf-uw-Y7B" secondAttribute="bottom" constant="70" id="6ts-iV-ldx"/>
                     <constraint firstItem="OnC-wu-Ny9" firstAttribute="centerY" secondItem="B4B-Db-q1V" secondAttribute="centerY" id="76L-D8-Ucc"/>
-                    <constraint firstItem="UPR-fo-qhS" firstAttribute="centerX" secondItem="3g3-Iw-Opx" secondAttribute="centerX" id="7MH-Jq-dXa"/>
+                    <constraint firstItem="UPR-fo-qhS" firstAttribute="centerX" secondItem="3g3-Iw-Opx" secondAttribute="centerX" constant="100" id="7MH-Jq-dXa"/>
                     <constraint firstItem="E6m-6F-gEn" firstAttribute="centerX" secondItem="1C2-7t-O2e" secondAttribute="centerX" id="887-ED-3BH"/>
                     <constraint firstItem="et0-vS-UbQ" firstAttribute="top" secondItem="UPR-fo-qhS" secondAttribute="bottom" constant="17" id="8QW-cv-xQf"/>
                     <constraint firstItem="edf-uw-Y7B" firstAttribute="top" secondItem="aCO-mP-Scu" secondAttribute="bottom" constant="20" id="9dY-87-5b1"/>
@@ -410,6 +436,7 @@ DQ
                     <constraint firstItem="yt9-eY-OtB" firstAttribute="centerX" secondItem="Id4-sA-LlA" secondAttribute="centerX" id="PzX-4X-9Ku"/>
                     <constraint firstItem="Cov-Cf-mlM" firstAttribute="top" secondItem="N13-IH-l3N" secondAttribute="bottom" constant="22" id="Q9m-r0-JWD"/>
                     <constraint firstItem="B4B-Db-q1V" firstAttribute="top" secondItem="TTD-7S-RuJ" secondAttribute="bottom" constant="57" id="QPn-0x-g3Q"/>
+                    <constraint firstItem="EeZ-aU-e2J" firstAttribute="centerY" secondItem="OnC-wu-Ny9" secondAttribute="centerY" id="Qem-7f-qYe"/>
                     <constraint firstItem="pxF-Oc-JDO" firstAttribute="top" secondItem="ip6-Oy-unX" secondAttribute="bottom" constant="20" id="Rg8-2l-iZq"/>
                     <constraint firstItem="1C2-7t-O2e" firstAttribute="centerY" secondItem="YXq-JI-RJ1" secondAttribute="centerY" id="TbM-6S-fN8"/>
                     <constraint firstItem="Vhs-gD-ssp" firstAttribute="top" secondItem="gGz-02-I60" secondAttribute="bottom" constant="18" id="Tg8-Kx-dBQ"/>
@@ -417,6 +444,7 @@ DQ
                     <constraint firstItem="E6m-6F-gEn" firstAttribute="top" secondItem="1C2-7t-O2e" secondAttribute="bottom" constant="24" id="Ucw-dS-6fc"/>
                     <constraint firstItem="3g3-Iw-Opx" firstAttribute="centerX" secondItem="JZ4-xf-xRv" secondAttribute="centerX" id="Ux8-W2-yjo"/>
                     <constraint firstItem="TTD-7S-RuJ" firstAttribute="centerX" secondItem="8iy-JJ-q0o" secondAttribute="centerX" id="X56-5n-85A"/>
+                    <constraint firstItem="pgY-ET-ajG" firstAttribute="centerX" secondItem="EeZ-aU-e2J" secondAttribute="centerX" id="XED-oS-I3g"/>
                     <constraint firstItem="BfP-74-Q4c" firstAttribute="centerY" secondItem="xyN-hm-0ic" secondAttribute="centerY" id="Xfv-Yy-DkP"/>
                     <constraint firstItem="G3E-yA-W2J" firstAttribute="centerX" secondItem="buQ-es-hLb" secondAttribute="centerX" id="YK3-1s-RRn"/>
                     <constraint firstItem="Df1-Hh-NdE" firstAttribute="centerX" secondItem="YXq-JI-RJ1" secondAttribute="centerX" id="ZDt-9z-fk5"/>
@@ -426,6 +454,7 @@ DQ
                     <constraint firstItem="sTR-6p-0Og" firstAttribute="centerY" secondItem="FWr-Tr-Qab" secondAttribute="centerY" id="aSm-IE-FtY"/>
                     <constraint firstItem="Df1-Hh-NdE" firstAttribute="top" secondItem="YXq-JI-RJ1" secondAttribute="bottom" constant="24" id="c1A-l1-5uA"/>
                     <constraint firstItem="U0V-Lz-JGz" firstAttribute="centerX" secondItem="G3E-yA-W2J" secondAttribute="centerX" id="caQ-x7-hFg"/>
+                    <constraint firstItem="EeZ-aU-e2J" firstAttribute="leading" secondItem="OnC-wu-Ny9" secondAttribute="trailing" constant="74" id="e9R-sa-QHa"/>
                     <constraint firstItem="g5A-5R-br4" firstAttribute="leading" secondItem="N13-IH-l3N" secondAttribute="trailing" constant="106" id="eYP-Nq-DOh"/>
                     <constraint firstItem="miy-ml-b7E" firstAttribute="top" secondItem="p4R-zM-Ice" secondAttribute="bottom" constant="22" id="efC-PQ-ivo"/>
                     <constraint firstItem="dBp-4e-PyV" firstAttribute="top" secondItem="gZx-Zl-rAU" secondAttribute="bottom" constant="18" id="fLs-v6-jLe"/>
@@ -448,6 +477,7 @@ DQ
                     <constraint firstItem="xyN-hm-0ic" firstAttribute="centerY" secondItem="Id4-sA-LlA" secondAttribute="centerY" constant="0.5" id="obA-gQ-LPk"/>
                     <constraint firstItem="mrC-OW-rmX" firstAttribute="top" secondItem="pxF-Oc-JDO" secondAttribute="bottom" constant="20" id="qIL-zl-T9V"/>
                     <constraint firstItem="1C2-7t-O2e" firstAttribute="top" secondItem="UPR-fo-qhS" secondAttribute="bottom" constant="30" id="rAu-43-VWd"/>
+                    <constraint firstItem="pgY-ET-ajG" firstAttribute="top" secondItem="EeZ-aU-e2J" secondAttribute="bottom" constant="21" id="tmx-ua-ULU"/>
                     <constraint firstItem="aCO-mP-Scu" firstAttribute="top" secondItem="5g4-hs-yFj" secondAttribute="bottom" constant="22" id="tot-n3-Qwm"/>
                     <constraint firstItem="hAM-69-r0Z" firstAttribute="top" secondItem="g5A-5R-br4" secondAttribute="bottom" constant="22" id="wI1-Uy-deq"/>
                     <constraint firstItem="7ME-K9-oIC" firstAttribute="top" secondItem="OnC-wu-Ny9" secondAttribute="bottom" constant="22" id="wyQ-Uq-bhh"/>
