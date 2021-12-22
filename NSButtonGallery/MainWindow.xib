@@ -517,10 +517,12 @@ Rocket</string>
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="6Iw-Uo-cFV"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Fg4-nL-R4n"/>
-                    <toolbarItem implicitItemIdentifier="93686673-42DE-4F42-A65F-F34F655CAE77" label="Column View" paletteLabel="Column View" image="NSColumnViewTemplate" sizingBehavior="auto" id="5ch-Dl-RXp">
+                    <toolbarItem implicitItemIdentifier="93686673-42DE-4F42-A65F-F34F655CAE77" label="Columns" paletteLabel="Columns" image="NSColumnViewTemplate" id="5ch-Dl-RXp">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="30" height="23"/>
+                        <size key="maxSize" width="38" height="25"/>
                         <button key="view" verticalHuggingPriority="750" id="u2F-Xe-Byg">
-                            <rect key="frame" x="23" y="14" width="30" height="23"/>
+                            <rect key="frame" x="12" y="14" width="30" height="23"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSColumnViewTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8ZC-z8-t0U">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -528,8 +530,10 @@ Rocket</string>
                             </buttonCell>
                         </button>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="D57B43C8-51B6-4685-AD5B-8905451F97EB" label="Bookmarks" paletteLabel="Bookmarks" image="NSBookmarksTemplate" sizingBehavior="auto" id="MAe-iO-WsQ">
+                    <toolbarItem implicitItemIdentifier="D57B43C8-51B6-4685-AD5B-8905451F97EB" label="Bookmarks" paletteLabel="Bookmarks" image="NSBookmarksTemplate" id="MAe-iO-WsQ">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="30" height="23"/>
+                        <size key="maxSize" width="38" height="25"/>
                         <button key="view" verticalHuggingPriority="750" id="y4T-Pp-PWc">
                             <rect key="frame" x="18" y="14" width="30" height="23"/>
                             <autoresizingMask key="autoresizingMask"/>
@@ -539,11 +543,13 @@ Rocket</string>
                             </buttonCell>
                         </button>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="E99E9BEB-9D7B-4380-86EF-0EE8C0042923" label="Add Item" paletteLabel="Add Item" image="NSAddTemplate" sizingBehavior="auto" id="nLs-Xz-TmO">
+                    <toolbarItem implicitItemIdentifier="E99E9BEB-9D7B-4380-86EF-0EE8C0042923" label="Add Item" paletteLabel="Add Item" image="NSAddTemplate" id="nLs-Xz-TmO">
                         <nil key="toolTip"/>
+                        <size key="minSize" width="26" height="23"/>
+                        <size key="maxSize" width="38" height="25"/>
                         <button key="view" verticalHuggingPriority="750" id="5PT-vr-qsB">
-                            <rect key="frame" x="0.0" y="14" width="127" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <rect key="frame" x="14" y="14" width="26" height="23"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VyZ-l2-DbQ">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
