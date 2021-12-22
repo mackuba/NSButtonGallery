@@ -11,6 +11,7 @@
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
 @end
 
 @implementation AppDelegate
@@ -21,6 +22,47 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+- (NSArray<NSToolbarItemIdentifier> *)toolbarDefaultItemIdentifiers:(NSToolbar *)toolbar {
+    return @[@"Network", @"Accounts", @"Columns1", @"Columns2", @"Columns3", @"Columns4"];
+}
+
+- (NSArray<NSToolbarItemIdentifier> *)toolbarAllowedItemIdentifiers:(NSToolbar *)toolbar {
+    return @[@"Network", @"Accounts", @"Columns1", @"Columns2", @"Columns3", @"Columns4"];
+}
+
+- (NSToolbarItem *)toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSToolbarItemIdentifier)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag {
+    
+    NSToolbarItem *item = [[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier];
+    item.action = @selector(executeAction:);
+    item.label = itemIdentifier;
+    item.target = self;
+    item.paletteLabel = itemIdentifier;
+
+    if (@available(macOS 10.15, *)) {
+        item.bordered = ([itemIdentifier isEqualTo:@"Accounts"] || [itemIdentifier isEqualTo:@"Columns2"] || [itemIdentifier isEqualTo:@"Columns4"]);
+    }
+
+    if ([itemIdentifier isEqualTo:@"Network"]) {
+        item.image = [NSImage imageNamed:NSImageNameNetwork];
+    } else if ([itemIdentifier isEqualTo:@"Accounts"]) {
+        item.image = [NSImage imageNamed:NSImageNameUserAccounts];
+    } else {
+        NSImage *image = [NSImage imageNamed:NSImageNameColumnViewTemplate];
+        NSButton *button = [NSButton buttonWithImage:image
+                                              target:self
+                                              action:@selector(executeAction:)];
+        button.bordered = ([itemIdentifier isEqualTo:@"Columns1"] || [itemIdentifier isEqualTo:@"Columns2"]);
+        button.bezelStyle = NSBezelStyleTexturedRounded;
+        item.view = button;
+    }
+    
+    return item;
+}
+
+- (void)executeAction:(id)sender {
+    
 }
 
 @end

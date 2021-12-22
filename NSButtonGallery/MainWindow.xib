@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -513,6 +513,18 @@ Rocket</string>
                     <constraint firstItem="Cov-Cf-mlM" firstAttribute="centerX" secondItem="N13-IH-l3N" secondAttribute="centerX" id="zaa-Cx-SJe"/>
                 </constraints>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="BDC023C6-BB9F-42E2-822B-506CE0EA98CE" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="8OC-9Z-MyS">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="2EK-XG-rl3"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="gus-e8-3i2"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="gus-e8-3i2"/>
+                </defaultToolbarItems>
+                <connections>
+                    <outlet property="delegate" destination="xbQ-Iz-qHG" id="Kig-Jw-hLI"/>
+                </connections>
+            </toolbar>
             <point key="canvasLocation" x="411.5" y="55"/>
         </window>
         <menu title="Main Menu" systemMenu="main" id="Nxa-DE-HR6">
