@@ -49,10 +49,10 @@
     } else if ([itemIdentifier isEqualTo:@"Accounts"]) {
         item.image = [NSImage imageNamed:NSImageNameUserAccounts];
     } else {
-        NSImage *image = [NSImage imageNamed:NSImageNameColumnViewTemplate];
-        NSButton *button = [NSButton buttonWithImage:image
-                                              target:self
-                                              action:@selector(executeAction:)];
+        NSButton *button = [[NSButton alloc] init];
+        button.target = self;
+        button.action = @selector(executeAction:);
+        button.image = [NSImage imageNamed:NSImageNameColumnViewTemplate];
         button.bordered = ([itemIdentifier isEqualTo:@"Columns1"] || [itemIdentifier isEqualTo:@"Columns2"]);
         button.bezelStyle = NSBezelStyleTexturedRounded;
         item.view = button;
