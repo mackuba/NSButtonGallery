@@ -20,7 +20,7 @@
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="913" height="720"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5g4-hs-yFj">
                         <rect key="frame" x="33" y="653" width="75" height="32"/>
@@ -517,97 +517,45 @@ Rocket</string>
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="6Iw-Uo-cFV"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Fg4-nL-R4n"/>
-                    <toolbarItem implicitItemIdentifier="185BFC60-7852-417B-9FD3-AA2F8AE3AF19" label="Network" paletteLabel="Network" tag="-1" image="NSNetwork" id="OCO-Sb-e0f">
-                        <size key="minSize" width="32" height="32"/>
-                        <size key="maxSize" width="32" height="32"/>
-                        <connections>
-                            <action selector="executeAction:" target="xbQ-Iz-qHG" id="imz-be-z3x"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="B233778A-BA28-4D13-8620-60CEE8B3349E" label="Accounts" paletteLabel="Accounts" tag="-1" image="NSUserAccounts" bordered="YES" autovalidates="NO" id="B59-kt-Icu">
-                        <size key="minSize" width="32" height="25"/>
-                        <size key="maxSize" width="32" height="25"/>
-                        <connections>
-                            <action selector="executeAction:" target="xbQ-Iz-qHG" id="zPJ-yl-jLx"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="7D87A1E0-EE67-4E4D-B07D-80DCB05BE98F" label="Columns1" paletteLabel="Columns1" image="NSColumnViewTemplate" sizingBehavior="auto" autovalidates="NO" id="4cm-gd-gC8">
+                    <toolbarItem implicitItemIdentifier="93686673-42DE-4F42-A65F-F34F655CAE77" label="Column View" paletteLabel="Column View" image="NSColumnViewTemplate" sizingBehavior="auto" id="5ch-Dl-RXp">
                         <nil key="toolTip"/>
-                        <button key="view" verticalHuggingPriority="750" id="aDE-Li-vmq">
-                            <rect key="frame" x="9" y="14" width="40" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSColumnViewTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="z5w-sG-Z9l">
+                        <button key="view" verticalHuggingPriority="750" id="u2F-Xe-Byg">
+                            <rect key="frame" x="23" y="14" width="30" height="23"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSColumnViewTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8ZC-z8-t0U">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
-                            <connections>
-                                <action selector="executeAction:" target="xbQ-Iz-qHG" id="dSG-94-BlD"/>
-                            </connections>
                         </button>
-                        <connections>
-                            <action selector="executeAction:" target="xbQ-Iz-qHG" id="Bj1-Jq-R43"/>
-                        </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="5AFB5AC4-46AC-4B00-92D0-BDD969C88097" label="Columns2" paletteLabel="Columns2" image="NSColumnViewTemplate" sizingBehavior="auto" autovalidates="NO" id="7Kg-m3-ma5">
+                    <toolbarItem implicitItemIdentifier="D57B43C8-51B6-4685-AD5B-8905451F97EB" label="Bookmarks" paletteLabel="Bookmarks" image="NSBookmarksTemplate" sizingBehavior="auto" id="MAe-iO-WsQ">
                         <nil key="toolTip"/>
-                        <button key="view" verticalHuggingPriority="750" id="JOj-oa-Fqp">
-                            <rect key="frame" x="10" y="14" width="40" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSColumnViewTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wvd-qU-bet">
+                        <button key="view" verticalHuggingPriority="750" id="y4T-Pp-PWc">
+                            <rect key="frame" x="18" y="14" width="30" height="23"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSBookmarksTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QmQ-kU-NRi">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
-                            <connections>
-                                <action selector="executeAction:" target="xbQ-Iz-qHG" id="4kj-Xy-aZd"/>
-                            </connections>
                         </button>
-                        <connections>
-                            <action selector="executeAction:" target="xbQ-Iz-qHG" id="lHz-RL-6Xc"/>
-                        </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="E4D962BB-B13E-4EBA-B5FA-1F71139672CB" label="Columns3" paletteLabel="Columns3" image="NSColumnViewTemplate" bordered="YES" sizingBehavior="auto" autovalidates="NO" id="i07-DZ-XDV">
+                    <toolbarItem implicitItemIdentifier="E99E9BEB-9D7B-4380-86EF-0EE8C0042923" label="Add Item" paletteLabel="Add Item" image="NSAddTemplate" sizingBehavior="auto" id="nLs-Xz-TmO">
                         <nil key="toolTip"/>
-                        <button key="view" verticalHuggingPriority="750" id="HJP-8m-QNF">
-                            <rect key="frame" x="10" y="14" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="5PT-vr-qsB">
+                            <rect key="frame" x="0.0" y="14" width="127" height="25"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSColumnViewTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="3CA-qY-goF">
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VyZ-l2-DbQ">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
-                            <connections>
-                                <action selector="executeAction:" target="xbQ-Iz-qHG" id="vYI-1K-cXJ"/>
-                            </connections>
                         </button>
-                        <connections>
-                            <action selector="executeAction:" target="xbQ-Iz-qHG" id="2V3-gj-B5T"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="37AD73F8-B64C-4420-B418-91B14E6453AE" label="Columns4" paletteLabel="Columns4" image="NSColumnViewTemplate" bordered="YES" sizingBehavior="auto" autovalidates="NO" id="pDz-JR-jDV">
-                        <nil key="toolTip"/>
-                        <button key="view" verticalHuggingPriority="750" id="lgl-9g-CQC">
-                            <rect key="frame" x="10" y="14" width="40" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSColumnViewTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mgw-Xd-zLV">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" metaFont="system"/>
-                            </buttonCell>
-                            <connections>
-                                <action selector="executeAction:" target="xbQ-Iz-qHG" id="MeZ-Ln-7Ld"/>
-                            </connections>
-                        </button>
-                        <connections>
-                            <action selector="executeAction:" target="xbQ-Iz-qHG" id="mW6-tZ-lY6"/>
-                        </connections>
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="Fg4-nL-R4n"/>
-                    <toolbarItem reference="OCO-Sb-e0f"/>
-                    <toolbarItem reference="B59-kt-Icu"/>
-                    <toolbarItem reference="4cm-gd-gC8"/>
-                    <toolbarItem reference="7Kg-m3-ma5"/>
-                    <toolbarItem reference="i07-DZ-XDV"/>
-                    <toolbarItem reference="pDz-JR-jDV"/>
+                    <toolbarItem reference="MAe-iO-WsQ"/>
+                    <toolbarItem reference="5ch-Dl-RXp"/>
+                    <toolbarItem reference="nLs-Xz-TmO"/>
                 </defaultToolbarItems>
             </toolbar>
             <point key="canvasLocation" x="411.5" y="55"/>
@@ -1249,9 +1197,8 @@ Rocket</string>
     </objects>
     <resources>
         <image name="NSAddTemplate" width="14" height="13"/>
+        <image name="NSBookmarksTemplate" width="18" height="14"/>
         <image name="NSColumnViewTemplate" width="18" height="14"/>
         <image name="NSFolder" width="32" height="32"/>
-        <image name="NSNetwork" width="32" height="32"/>
-        <image name="NSUserAccounts" width="32" height="32"/>
     </resources>
 </document>
