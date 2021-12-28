@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment version="101500" identifier="macosx"/>
+        <deployment version="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,480 +22,71 @@
                 <rect key="frame" x="0.0" y="0.0" width="913" height="636"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5g4-hs-yFj">
-                        <rect key="frame" x="34" y="568" width="81" height="32"/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qsP-k7-ej7">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qff-N4-MU1">
+                        <rect key="frame" x="105" y="527" width="103" height="18"/>
+                        <buttonCell key="cell" type="check" title="Extra Cheese" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kMP-gp-8Th">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-mP-Scu">
-                        <rect key="frame" x="34" y="525" width="81" height="32"/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="H6x-hL-4Gw">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent" base64-UTF8="YES">
-DQ
-</string>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BfP-74-Q4c">
-                        <rect key="frame" x="189" y="575" width="19" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="19" id="dk6-nA-oZu"/>
-                            <constraint firstAttribute="height" constant="19" id="duG-9I-gzy"/>
-                        </constraints>
-                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fs8-mb-g0b">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-sT-7L3">
+                        <rect key="frame" x="105" y="507" width="65" height="18"/>
+                        <buttonCell key="cell" type="check" title="Onions" bezelStyle="regularSquare" imagePosition="left" state="mixed" allowsMixedState="YES" inset="2" id="VGM-Zx-jZF">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="edf-uw-Y7B">
-                        <rect key="frame" x="34" y="484" width="81" height="32"/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Dh-gN-0cA">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yC6-xk-utz">
+                        <rect key="frame" x="105" y="487" width="84" height="18"/>
+                        <buttonCell key="cell" type="check" title="Jalapeños" bezelStyle="regularSquare" imagePosition="left" inset="2" id="WSA-Dm-LOl">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FWr-Tr-Qab">
-                        <rect key="frame" x="189" y="532" width="19" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="19" id="KLA-uH-Aux"/>
-                            <constraint firstAttribute="height" constant="19" id="je8-tB-qKu"/>
-                        </constraints>
-                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K3t-Ns-IFA">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kpa-Tz-xL0">
+                        <rect key="frame" x="389" y="526" width="83" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Mavericks" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="TsF-SI-l6g">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="QvC-M9-y7g" id="kEl-Ol-RWM"/>
+                        </connections>
                     </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Id4-sA-LlA">
-                        <rect key="frame" x="403" y="576" width="121" height="19"/>
-                        <buttonCell key="cell" type="roundRect" title="Round Rect Button" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ra6-n1-SXD">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="controlContent"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Eho-ID-TeS">
-                        <rect key="frame" x="39.5" y="354" width="125" height="23"/>
-                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="D3T-cH-xUe">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eUB-Ru-w3W">
+                        <rect key="frame" x="389" y="504" width="71" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Catalina" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="zID-pC-ub6">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="QvC-M9-y7g" id="RDU-LV-35J"/>
+                        </connections>
                     </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="buQ-es-hLb">
-                        <rect key="frame" x="427" y="420" width="116" height="19"/>
-                        <buttonCell key="cell" type="recessed" title="Recessed Button" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0cw-RR-QJ5">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="systemBold" size="12"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G3E-yA-W2J">
-                        <rect key="frame" x="427" y="382" width="116" height="19"/>
-                        <buttonCell key="cell" type="recessed" title="Recessed Button" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lP4-jU-vyc">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="systemBold" size="12"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U0V-Lz-JGz">
-                        <rect key="frame" x="427" y="344" width="116" height="19"/>
-                        <buttonCell key="cell" type="recessed" title="Recessed Button" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="knd-2O-Af1">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="systemBold" size="12"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yt9-eY-OtB">
-                        <rect key="frame" x="403" y="538" width="121" height="19"/>
-                        <buttonCell key="cell" type="roundRect" title="Round Rect Button" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6MX-PF-Kkj">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="controlContent"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-xf-xRv">
-                        <rect key="frame" x="623" y="421" width="84" height="17"/>
-                        <buttonCell key="cell" type="inline" title="Inline Button" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="8k2-wy-HsN">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="smallSystemBold"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-Oy-unX">
-                        <rect key="frame" x="600" y="580" width="13" height="13"/>
-                        <buttonCell key="cell" type="disclosureTriangle" bezelStyle="disclosure" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xcy-tv-4S5">
-                            <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z8s-7M-bUQ">
+                        <rect key="frame" x="389" y="482" width="66" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Big Sur" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="ZZv-QL-H9g">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="orderFront:" target="QvC-M9-y7g" id="04D-ys-aIx"/>
+                        </connections>
                     </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pxF-Oc-JDO">
-                        <rect key="frame" x="600" y="547" width="13" height="13"/>
-                        <buttonCell key="cell" type="disclosureTriangle" bezelStyle="disclosure" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iMi-ee-kiJ">
-                            <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mrC-OW-rmX">
-                        <rect key="frame" x="600" y="514" width="13" height="13"/>
-                        <buttonCell key="cell" type="disclosureTriangle" bezelStyle="disclosure" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tz1-ME-Ec4">
-                            <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-DR-u49">
-                        <rect key="frame" x="692" y="573" width="27" height="26"/>
-                        <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h5F-i1-OPl">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gGz-02-I60">
-                        <rect key="frame" x="692" y="534" width="27" height="26"/>
-                        <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lfe-Ue-g6C">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-gD-ssp">
-                        <rect key="frame" x="692" y="495" width="27" height="26"/>
-                        <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BnB-ZD-3nq">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p4R-zM-Ice">
-                        <rect key="frame" x="38" y="265" width="25" height="25"/>
-                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qc6-D4-sIe">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miy-ml-b7E">
-                        <rect key="frame" x="38" y="222" width="25" height="25"/>
-                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6H2-I8-BF6">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="alg-Ci-Nyo">
-                        <rect key="frame" x="39.5" y="398" width="125" height="23"/>
-                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DcY-9a-DjL">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N13-IH-l3N">
-                        <rect key="frame" x="32" y="93" width="38" height="24"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="momentary" id="PPg-mT-Tgq">
-                            <font key="font" metaFont="system"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32"/>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-Cf-mlM">
-                        <rect key="frame" x="32" y="50" width="38" height="24"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="momentary" id="BlW-Xt-o18">
-                            <font key="font" metaFont="system"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32"/>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g5A-5R-br4">
-                        <rect key="frame" x="173.5" y="94" width="38" height="23"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="capsule" trackingMode="momentary" id="aKb-r4-1Dv">
-                            <font key="font" metaFont="system"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32"/>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hAM-69-r0Z">
-                        <rect key="frame" x="173.5" y="50" width="38" height="23"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="capsule" trackingMode="momentary" id="1Mw-gR-vRo">
-                            <font key="font" metaFont="system"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32"/>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YXq-JI-RJ1">
-                        <rect key="frame" x="322" y="96" width="36" height="20"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="roundRect" trackingMode="momentary" id="rvw-AA-89Y">
-                            <font key="font" metaFont="controlContent"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32"/>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Df1-Hh-NdE">
-                        <rect key="frame" x="322" y="54" width="36" height="20"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="roundRect" trackingMode="momentary" id="3he-1R-4UC">
-                            <font key="font" metaFont="controlContent"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32">
-                                    <nil key="label"/>
-                                </segment>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1C2-7t-O2e">
-                        <rect key="frame" x="462" y="94" width="34" height="23"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="smallSquare" trackingMode="momentary" id="BKc-qM-1hh">
-                            <font key="font" metaFont="system"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32"/>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E6m-6F-gEn">
-                        <rect key="frame" x="462" y="49" width="34" height="23"/>
-                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="smallSquare" trackingMode="momentary" id="wfR-oH-m9I">
-                            <font key="font" metaFont="system"/>
-                            <segments>
-                                <segment image="NSAddTemplate" width="32"/>
-                            </segments>
-                        </segmentedCell>
-                    </segmentedControl>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="UPR-fo-qhS">
-                        <rect key="frame" x="741" y="146" width="48" height="48"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="48" id="33W-aF-bld"/>
-                            <constraint firstAttribute="width" constant="48" id="8pg-c9-H0w"/>
-                        </constraints>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFolder" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gHg-9o-NzC">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="et0-vS-UbQ">
-                        <rect key="frame" x="741" y="81" width="48" height="48"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="48" id="8YH-JL-ciJ"/>
-                            <constraint firstAttribute="height" constant="48" id="P9I-9d-5XL"/>
-                        </constraints>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFolder" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="23Y-yY-l5A">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3g3-Iw-Opx">
-                        <rect key="frame" x="623" y="383" width="84" height="17"/>
-                        <buttonCell key="cell" type="inline" title="Inline Button" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="VfK-3X-aCp">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="smallSystemBold"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xyN-hm-0ic">
-                        <rect key="frame" x="240" y="575" width="103" height="22"/>
-                        <buttonCell key="cell" type="smallSquare" title="Gradient Button" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NKA-dZ-iNw">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sTR-6p-0Og">
-                        <rect key="frame" x="240" y="532" width="103" height="22"/>
-                        <buttonCell key="cell" type="smallSquare" title="Gradient Button" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wka-wI-c7E">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8iy-JJ-q0o">
-                        <rect key="frame" x="235" y="396" width="105" height="25"/>
-                        <buttonCell key="cell" type="squareTextured" title="Textured Button" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nLB-fn-XUc">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TTD-7S-RuJ">
-                        <rect key="frame" x="235" y="353" width="105" height="25"/>
-                        <buttonCell key="cell" type="squareTextured" title="Textured Button" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6na-qr-7rJ">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="B4B-Db-q1V">
-                        <rect key="frame" x="218" y="243" width="55" height="55"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="55" id="euH-Wn-NsO"/>
-                            <constraint firstAttribute="height" constant="55" id="gEd-bx-dzj"/>
-                        </constraints>
-                        <buttonCell key="cell" type="square" title="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kTL-WD-n0r">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="CWj-Ca-Goe">
-                        <rect key="frame" x="218" y="168" width="55" height="55"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="55" id="Mga-T9-IbZ"/>
-                            <constraint firstAttribute="width" constant="55" id="Q1C-Wm-ndW"/>
-                        </constraints>
-                        <buttonCell key="cell" type="square" title="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ybg-1q-WXh">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gZx-Zl-rAU">
-                        <rect key="frame" x="337" y="254" width="32" height="31"/>
-                        <buttonCell key="cell" type="round" bezelStyle="circular" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" id="XwJ-W3-g2p">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system" size="10"/>
-                        </buttonCell>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dBp-4e-PyV">
-                        <rect key="frame" x="337" y="216" width="32" height="31"/>
-                        <buttonCell key="cell" type="round" bezelStyle="circular" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" id="Bni-uE-XWX">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system" size="10"/>
-                        </buttonCell>
-                    </button>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="7ME-K9-oIC">
-                        <rect key="frame" x="471" y="174" width="60" height="53"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="56" id="ET0-ew-4U7"/>
-                            <constraint firstAttribute="height" constant="48" id="e4d-vv-bBA"/>
-                        </constraints>
-                        <buttonCell key="cell" type="bevel" title="bevel" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dvS-Xl-bef">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system" size="10"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-aU-e2J">
-                        <rect key="frame" x="601" y="243" width="80" height="55"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="76" id="CGP-E6-pZM"/>
-                            <constraint firstAttribute="height" constant="50" id="nfR-je-hx8"/>
-                        </constraints>
-                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uJ0-IC-4Jr">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <string key="title">Bevel
-Button</string>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-ET-ajG">
-                        <rect key="frame" x="601" y="172" width="80" height="55"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="0vX-vt-nB3"/>
-                            <constraint firstAttribute="width" constant="76" id="djk-kI-Equ"/>
-                        </constraints>
-                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4w4-3S-8Qp">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <string key="title">Bevel
-Button</string>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="OnC-wu-Ny9">
-                        <rect key="frame" x="471" y="244" width="60" height="53"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="48" id="oOY-6v-PLf"/>
-                            <constraint firstAttribute="width" constant="56" id="t1T-WH-9im"/>
-                        </constraints>
-                        <buttonCell key="cell" type="bevel" title="bevel" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1BI-yo-1tj">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system" size="10"/>
-                        </buttonCell>
-                    </button>
-                    <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="lVx-N7-w79">
-                        <rect key="frame" x="789" y="418" width="42" height="24"/>
-                    </switch>
-                    <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" state="on" translatesAutoresizingMaskIntoConstraints="NO" id="SfG-dw-unR">
-                        <rect key="frame" x="789" y="377" width="42" height="24"/>
-                    </switch>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="U0V-Lz-JGz" firstAttribute="top" secondItem="G3E-yA-W2J" secondAttribute="bottom" constant="20" id="0Fe-rh-sA9"/>
-                    <constraint firstItem="p4R-zM-Ice" firstAttribute="leading" secondItem="Eho-ID-TeS" secondAttribute="leading" id="0K8-WE-uNH"/>
-                    <constraint firstItem="buQ-es-hLb" firstAttribute="leading" secondItem="alg-Ci-Nyo" secondAttribute="trailing" constant="263" id="0XK-kW-ghD"/>
-                    <constraint firstItem="sTR-6p-0Og" firstAttribute="centerX" secondItem="xyN-hm-0ic" secondAttribute="centerX" id="1hu-nR-7WU"/>
-                    <constraint firstItem="3g3-Iw-Opx" firstAttribute="top" secondItem="JZ4-xf-xRv" secondAttribute="bottom" constant="22" id="29d-eS-9sD"/>
-                    <constraint firstItem="pxF-Oc-JDO" firstAttribute="centerX" secondItem="ip6-Oy-unX" secondAttribute="centerX" id="2F8-MU-m4w"/>
-                    <constraint firstItem="alg-Ci-Nyo" firstAttribute="leading" secondItem="edf-uw-Y7B" secondAttribute="leading" id="30R-h2-zgu"/>
-                    <constraint firstItem="BfP-74-Q4c" firstAttribute="leading" secondItem="5g4-hs-yFj" secondAttribute="trailing" constant="80" id="3ZW-kk-4GW"/>
-                    <constraint firstItem="ip6-Oy-unX" firstAttribute="leading" secondItem="Id4-sA-LlA" secondAttribute="trailing" constant="76" id="3gf-IR-yKA"/>
-                    <constraint firstItem="OnC-wu-Ny9" firstAttribute="leading" secondItem="gZx-Zl-rAU" secondAttribute="trailing" constant="110" id="4DY-2h-gSF"/>
-                    <constraint firstItem="alg-Ci-Nyo" firstAttribute="centerY" secondItem="8iy-JJ-q0o" secondAttribute="centerY" constant="-1" id="4nj-0f-C7u"/>
-                    <constraint firstItem="JZ4-xf-xRv" firstAttribute="leading" secondItem="buQ-es-hLb" secondAttribute="trailing" constant="80" id="54N-VO-xQ4"/>
-                    <constraint firstItem="gZx-Zl-rAU" firstAttribute="centerY" secondItem="B4B-Db-q1V" secondAttribute="centerY" id="5Pa-Me-fCA"/>
-                    <constraint firstItem="g5A-5R-br4" firstAttribute="centerY" secondItem="N13-IH-l3N" secondAttribute="centerY" id="5qI-zD-ngH"/>
-                    <constraint firstItem="N13-IH-l3N" firstAttribute="centerX" secondItem="miy-ml-b7E" secondAttribute="centerX" id="6Uq-3f-0sT"/>
-                    <constraint firstItem="alg-Ci-Nyo" firstAttribute="top" secondItem="edf-uw-Y7B" secondAttribute="bottom" constant="70" id="6ts-iV-ldx"/>
-                    <constraint firstItem="OnC-wu-Ny9" firstAttribute="centerY" secondItem="B4B-Db-q1V" secondAttribute="centerY" id="76L-D8-Ucc"/>
-                    <constraint firstItem="UPR-fo-qhS" firstAttribute="centerX" secondItem="3g3-Iw-Opx" secondAttribute="centerX" constant="100" id="7MH-Jq-dXa"/>
-                    <constraint firstItem="E6m-6F-gEn" firstAttribute="centerX" secondItem="1C2-7t-O2e" secondAttribute="centerX" id="887-ED-3BH"/>
-                    <constraint firstItem="et0-vS-UbQ" firstAttribute="top" secondItem="UPR-fo-qhS" secondAttribute="bottom" constant="17" id="8QW-cv-xQf"/>
-                    <constraint firstItem="edf-uw-Y7B" firstAttribute="top" secondItem="aCO-mP-Scu" secondAttribute="bottom" constant="20" id="9dY-87-5b1"/>
-                    <constraint firstItem="Eho-ID-TeS" firstAttribute="top" secondItem="alg-Ci-Nyo" secondAttribute="bottom" constant="22" id="9hv-SH-sSI"/>
-                    <constraint firstItem="ueW-DR-u49" firstAttribute="centerY" secondItem="ip6-Oy-unX" secondAttribute="centerY" id="BIi-Rv-NKb"/>
-                    <constraint firstItem="B4B-Db-q1V" firstAttribute="leading" secondItem="p4R-zM-Ice" secondAttribute="trailing" constant="157" id="BQ3-0L-y1K"/>
-                    <constraint firstItem="FWr-Tr-Qab" firstAttribute="centerX" secondItem="BfP-74-Q4c" secondAttribute="centerX" id="Bnn-Mb-S9M"/>
-                    <constraint firstItem="1C2-7t-O2e" firstAttribute="leading" secondItem="YXq-JI-RJ1" secondAttribute="trailing" constant="105" id="EJB-w7-hiV"/>
-                    <constraint firstItem="SfG-dw-unR" firstAttribute="top" secondItem="lVx-N7-w79" secondAttribute="bottom" constant="20" id="FFc-dS-dix"/>
-                    <constraint firstItem="gZx-Zl-rAU" firstAttribute="centerX" secondItem="dBp-4e-PyV" secondAttribute="centerX" id="FHd-zJ-3DJ"/>
-                    <constraint firstItem="ueW-DR-u49" firstAttribute="leading" secondItem="ip6-Oy-unX" secondAttribute="trailing" constant="82" id="Fh0-oy-qH6"/>
-                    <constraint firstItem="CWj-Ca-Goe" firstAttribute="top" secondItem="B4B-Db-q1V" secondAttribute="bottom" constant="20" id="Gm9-4r-HAV"/>
-                    <constraint firstItem="ip6-Oy-unX" firstAttribute="centerY" secondItem="Id4-sA-LlA" secondAttribute="centerY" id="HX0-In-x6K"/>
-                    <constraint firstItem="lVx-N7-w79" firstAttribute="centerY" secondItem="JZ4-xf-xRv" secondAttribute="centerY" id="Hx7-jp-KuS"/>
-                    <constraint firstItem="et0-vS-UbQ" firstAttribute="centerX" secondItem="UPR-fo-qhS" secondAttribute="centerX" id="K4b-Eb-Erg"/>
-                    <constraint firstItem="sTR-6p-0Og" firstAttribute="centerX" secondItem="8iy-JJ-q0o" secondAttribute="centerX" constant="4" id="LGf-wf-6Lj"/>
-                    <constraint firstItem="TTD-7S-RuJ" firstAttribute="centerY" secondItem="Eho-ID-TeS" secondAttribute="centerY" id="LfF-Cb-y7m"/>
-                    <constraint firstItem="buQ-es-hLb" firstAttribute="centerY" secondItem="alg-Ci-Nyo" secondAttribute="centerY" constant="-20" id="Lzf-sw-PH9"/>
-                    <constraint firstItem="7ME-K9-oIC" firstAttribute="centerX" secondItem="OnC-wu-Ny9" secondAttribute="centerX" id="MYa-Ea-JQS"/>
-                    <constraint firstItem="p4R-zM-Ice" firstAttribute="top" secondItem="Eho-ID-TeS" secondAttribute="bottom" constant="65" id="OXn-YC-7NW"/>
-                    <constraint firstItem="Vhs-gD-ssp" firstAttribute="centerX" secondItem="gGz-02-I60" secondAttribute="centerX" id="OsM-rq-hHX"/>
-                    <constraint firstItem="yt9-eY-OtB" firstAttribute="centerX" secondItem="Id4-sA-LlA" secondAttribute="centerX" id="PzX-4X-9Ku"/>
-                    <constraint firstItem="Cov-Cf-mlM" firstAttribute="top" secondItem="N13-IH-l3N" secondAttribute="bottom" constant="22" id="Q9m-r0-JWD"/>
-                    <constraint firstItem="B4B-Db-q1V" firstAttribute="top" secondItem="TTD-7S-RuJ" secondAttribute="bottom" constant="57" id="QPn-0x-g3Q"/>
-                    <constraint firstItem="EeZ-aU-e2J" firstAttribute="centerY" secondItem="OnC-wu-Ny9" secondAttribute="centerY" id="Qem-7f-qYe"/>
-                    <constraint firstItem="pxF-Oc-JDO" firstAttribute="top" secondItem="ip6-Oy-unX" secondAttribute="bottom" constant="20" id="Rg8-2l-iZq"/>
-                    <constraint firstItem="1C2-7t-O2e" firstAttribute="centerY" secondItem="YXq-JI-RJ1" secondAttribute="centerY" id="TbM-6S-fN8"/>
-                    <constraint firstItem="Vhs-gD-ssp" firstAttribute="top" secondItem="gGz-02-I60" secondAttribute="bottom" constant="18" id="Tg8-Kx-dBQ"/>
-                    <constraint firstItem="5g4-hs-yFj" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="40" id="UTJ-sk-Tqj"/>
-                    <constraint firstItem="E6m-6F-gEn" firstAttribute="top" secondItem="1C2-7t-O2e" secondAttribute="bottom" constant="24" id="Ucw-dS-6fc"/>
-                    <constraint firstItem="3g3-Iw-Opx" firstAttribute="centerX" secondItem="JZ4-xf-xRv" secondAttribute="centerX" id="Ux8-W2-yjo"/>
-                    <constraint firstItem="TTD-7S-RuJ" firstAttribute="centerX" secondItem="8iy-JJ-q0o" secondAttribute="centerX" id="X56-5n-85A"/>
-                    <constraint firstItem="pgY-ET-ajG" firstAttribute="centerX" secondItem="EeZ-aU-e2J" secondAttribute="centerX" id="XED-oS-I3g"/>
-                    <constraint firstItem="BfP-74-Q4c" firstAttribute="centerY" secondItem="xyN-hm-0ic" secondAttribute="centerY" id="Xfv-Yy-DkP"/>
-                    <constraint firstItem="G3E-yA-W2J" firstAttribute="centerX" secondItem="buQ-es-hLb" secondAttribute="centerX" id="YK3-1s-RRn"/>
-                    <constraint firstItem="Df1-Hh-NdE" firstAttribute="centerX" secondItem="YXq-JI-RJ1" secondAttribute="centerX" id="ZDt-9z-fk5"/>
-                    <constraint firstItem="N13-IH-l3N" firstAttribute="top" secondItem="miy-ml-b7E" secondAttribute="bottom" constant="110" id="Zeg-kg-LZA"/>
-                    <constraint firstItem="gZx-Zl-rAU" firstAttribute="leading" secondItem="B4B-Db-q1V" secondAttribute="trailing" constant="70" id="ZlA-73-Az0"/>
-                    <constraint firstItem="FWr-Tr-Qab" firstAttribute="centerY" secondItem="aCO-mP-Scu" secondAttribute="centerY" id="a9s-O8-8ek"/>
-                    <constraint firstItem="sTR-6p-0Og" firstAttribute="centerY" secondItem="FWr-Tr-Qab" secondAttribute="centerY" id="aSm-IE-FtY"/>
-                    <constraint firstItem="SfG-dw-unR" firstAttribute="centerX" secondItem="lVx-N7-w79" secondAttribute="centerX" id="bGc-ew-ZXT"/>
-                    <constraint firstItem="Df1-Hh-NdE" firstAttribute="top" secondItem="YXq-JI-RJ1" secondAttribute="bottom" constant="24" id="c1A-l1-5uA"/>
-                    <constraint firstItem="U0V-Lz-JGz" firstAttribute="centerX" secondItem="G3E-yA-W2J" secondAttribute="centerX" id="caQ-x7-hFg"/>
-                    <constraint firstItem="EeZ-aU-e2J" firstAttribute="leading" secondItem="OnC-wu-Ny9" secondAttribute="trailing" constant="74" id="e9R-sa-QHa"/>
-                    <constraint firstItem="g5A-5R-br4" firstAttribute="leading" secondItem="N13-IH-l3N" secondAttribute="trailing" constant="106" id="eYP-Nq-DOh"/>
-                    <constraint firstItem="miy-ml-b7E" firstAttribute="top" secondItem="p4R-zM-Ice" secondAttribute="bottom" constant="22" id="efC-PQ-ivo"/>
-                    <constraint firstItem="dBp-4e-PyV" firstAttribute="top" secondItem="gZx-Zl-rAU" secondAttribute="bottom" constant="18" id="fLs-v6-jLe"/>
-                    <constraint firstItem="YXq-JI-RJ1" firstAttribute="centerY" secondItem="g5A-5R-br4" secondAttribute="centerY" id="fSn-jy-30o"/>
-                    <constraint firstItem="lVx-N7-w79" firstAttribute="leading" secondItem="JZ4-xf-xRv" secondAttribute="trailing" constant="84" id="fjz-1Y-ExU"/>
-                    <constraint firstItem="G3E-yA-W2J" firstAttribute="top" secondItem="buQ-es-hLb" secondAttribute="bottom" constant="20" id="g8f-QO-L4w"/>
-                    <constraint firstItem="YXq-JI-RJ1" firstAttribute="leading" secondItem="g5A-5R-br4" secondAttribute="trailing" constant="112" id="hS2-o3-x4f"/>
-                    <constraint firstItem="gGz-02-I60" firstAttribute="centerX" secondItem="ueW-DR-u49" secondAttribute="centerX" id="hSe-cc-uvF"/>
-                    <constraint firstItem="hAM-69-r0Z" firstAttribute="centerX" secondItem="g5A-5R-br4" secondAttribute="centerX" id="hTU-bf-M3V"/>
-                    <constraint firstItem="JZ4-xf-xRv" firstAttribute="centerY" secondItem="buQ-es-hLb" secondAttribute="centerY" id="hcf-NQ-cRI"/>
-                    <constraint firstItem="Id4-sA-LlA" firstAttribute="leading" secondItem="xyN-hm-0ic" secondAttribute="trailing" constant="60" id="hoY-U0-c9K"/>
-                    <constraint firstItem="BfP-74-Q4c" firstAttribute="centerY" secondItem="5g4-hs-yFj" secondAttribute="centerY" id="iSx-EL-cDF"/>
-                    <constraint firstItem="5g4-hs-yFj" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="40" id="jVg-DE-wBW"/>
-                    <constraint firstItem="yt9-eY-OtB" firstAttribute="top" secondItem="Id4-sA-LlA" secondAttribute="bottom" constant="20" id="jpx-Qq-AJL"/>
-                    <constraint firstItem="gGz-02-I60" firstAttribute="top" secondItem="ueW-DR-u49" secondAttribute="bottom" constant="18" id="k6q-57-bso"/>
-                    <constraint firstItem="CWj-Ca-Goe" firstAttribute="centerX" secondItem="B4B-Db-q1V" secondAttribute="centerX" id="kkQ-8j-rOq"/>
-                    <constraint firstItem="5g4-hs-yFj" firstAttribute="centerX" secondItem="aCO-mP-Scu" secondAttribute="centerX" id="mcE-h7-U1S"/>
-                    <constraint firstItem="edf-uw-Y7B" firstAttribute="centerX" secondItem="aCO-mP-Scu" secondAttribute="centerX" id="n0F-mN-DRV"/>
-                    <constraint firstItem="Eho-ID-TeS" firstAttribute="centerX" secondItem="alg-Ci-Nyo" secondAttribute="centerX" id="n65-zz-mDp"/>
-                    <constraint firstItem="miy-ml-b7E" firstAttribute="centerX" secondItem="p4R-zM-Ice" secondAttribute="centerX" id="oY7-pV-xCG"/>
-                    <constraint firstItem="xyN-hm-0ic" firstAttribute="centerY" secondItem="Id4-sA-LlA" secondAttribute="centerY" constant="0.5" id="obA-gQ-LPk"/>
-                    <constraint firstItem="mrC-OW-rmX" firstAttribute="top" secondItem="pxF-Oc-JDO" secondAttribute="bottom" constant="20" id="qIL-zl-T9V"/>
-                    <constraint firstItem="1C2-7t-O2e" firstAttribute="top" secondItem="UPR-fo-qhS" secondAttribute="bottom" constant="30" id="rAu-43-VWd"/>
-                    <constraint firstAttribute="trailing" secondItem="lVx-N7-w79" secondAttribute="trailing" constant="84" id="tVU-an-Y2R"/>
-                    <constraint firstItem="pgY-ET-ajG" firstAttribute="top" secondItem="EeZ-aU-e2J" secondAttribute="bottom" constant="21" id="tmx-ua-ULU"/>
-                    <constraint firstItem="aCO-mP-Scu" firstAttribute="top" secondItem="5g4-hs-yFj" secondAttribute="bottom" constant="22" id="tot-n3-Qwm"/>
-                    <constraint firstItem="hAM-69-r0Z" firstAttribute="top" secondItem="g5A-5R-br4" secondAttribute="bottom" constant="22" id="wI1-Uy-deq"/>
-                    <constraint firstItem="7ME-K9-oIC" firstAttribute="top" secondItem="OnC-wu-Ny9" secondAttribute="bottom" constant="22" id="wyQ-Uq-bhh"/>
-                    <constraint firstItem="xyN-hm-0ic" firstAttribute="leading" secondItem="BfP-74-Q4c" secondAttribute="trailing" constant="32" id="xNa-sJ-fvL"/>
-                    <constraint firstItem="mrC-OW-rmX" firstAttribute="centerX" secondItem="pxF-Oc-JDO" secondAttribute="centerX" id="zGb-yx-Uur"/>
-                    <constraint firstItem="Cov-Cf-mlM" firstAttribute="centerX" secondItem="N13-IH-l3N" secondAttribute="centerX" id="zaa-Cx-SJe"/>
+                    <constraint firstItem="eUB-Ru-w3W" firstAttribute="leading" secondItem="Z8s-7M-bUQ" secondAttribute="leading" id="9N6-H0-yZO"/>
+                    <constraint firstItem="yC6-xk-utz" firstAttribute="leading" secondItem="qff-N4-MU1" secondAttribute="leading" id="9jv-fK-zPq"/>
+                    <constraint firstItem="qff-N4-MU1" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="107" id="Axx-jn-bq3"/>
+                    <constraint firstItem="iP2-sT-7L3" firstAttribute="top" secondItem="qff-N4-MU1" secondAttribute="bottom" constant="6" symbolic="YES" id="B7F-e8-6ev"/>
+                    <constraint firstItem="eUB-Ru-w3W" firstAttribute="leading" secondItem="kpa-Tz-xL0" secondAttribute="leading" id="DWc-ag-kQb"/>
+                    <constraint firstItem="eUB-Ru-w3W" firstAttribute="top" secondItem="kpa-Tz-xL0" secondAttribute="bottom" constant="6" symbolic="YES" id="LNr-yC-SdW"/>
+                    <constraint firstItem="kpa-Tz-xL0" firstAttribute="leading" secondItem="qff-N4-MU1" secondAttribute="trailing" constant="184" id="SLC-2g-R3C"/>
+                    <constraint firstItem="Z8s-7M-bUQ" firstAttribute="top" secondItem="eUB-Ru-w3W" secondAttribute="bottom" constant="6" symbolic="YES" id="T3c-D0-i0g"/>
+                    <constraint firstItem="yC6-xk-utz" firstAttribute="top" secondItem="iP2-sT-7L3" secondAttribute="bottom" constant="6" symbolic="YES" id="Vw3-Uf-YN8"/>
+                    <constraint firstItem="qff-N4-MU1" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="93" id="f2c-Lr-Hvo"/>
+                    <constraint firstItem="iP2-sT-7L3" firstAttribute="leading" secondItem="qff-N4-MU1" secondAttribute="leading" id="hcJ-ho-Vr7"/>
+                    <constraint firstItem="kpa-Tz-xL0" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="93" id="kLO-sx-EUt"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="411.5" y="55"/>
@@ -1135,8 +726,4 @@ Button</string>
             </connections>
         </customObject>
     </objects>
-    <resources>
-        <image name="NSAddTemplate" width="11" height="11"/>
-        <image name="NSFolder" width="32" height="32"/>
-    </resources>
 </document>
