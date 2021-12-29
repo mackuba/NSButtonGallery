@@ -312,43 +312,43 @@ DQ
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="B4B-Db-q1V">
-                        <rect key="frame" x="218" y="243" width="55" height="55"/>
+                        <rect key="frame" x="218" y="250" width="48" height="48"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="55" id="euH-Wn-NsO"/>
-                            <constraint firstAttribute="height" constant="55" id="gEd-bx-dzj"/>
+                            <constraint firstAttribute="width" constant="48" id="euH-Wn-NsO"/>
+                            <constraint firstAttribute="height" constant="48" id="gEd-bx-dzj"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" title="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kTL-WD-n0r">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSNetwork" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kTL-WD-n0r">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="CWj-Ca-Goe">
-                        <rect key="frame" x="218" y="168" width="55" height="55"/>
+                        <rect key="frame" x="218" y="182" width="48" height="48"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="55" id="Mga-T9-IbZ"/>
-                            <constraint firstAttribute="width" constant="55" id="Q1C-Wm-ndW"/>
+                            <constraint firstAttribute="height" constant="48" id="Mga-T9-IbZ"/>
+                            <constraint firstAttribute="width" constant="48" id="Q1C-Wm-ndW"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" title="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ybg-1q-WXh">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSNetwork" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ybg-1q-WXh">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gZx-Zl-rAU">
-                        <rect key="frame" x="337" y="254" width="32" height="31"/>
+                        <rect key="frame" x="330" y="257" width="32" height="31"/>
                         <buttonCell key="cell" type="round" bezelStyle="circular" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" id="XwJ-W3-g2p">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system" size="10"/>
                         </buttonCell>
                     </button>
                     <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dBp-4e-PyV">
-                        <rect key="frame" x="337" y="216" width="32" height="31"/>
+                        <rect key="frame" x="330" y="219" width="32" height="31"/>
                         <buttonCell key="cell" type="round" bezelStyle="circular" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" id="Bni-uE-XWX">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system" size="10"/>
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="7ME-K9-oIC">
-                        <rect key="frame" x="471" y="174" width="60" height="53"/>
+                        <rect key="frame" x="464" y="177" width="60" height="53"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="56" id="ET0-ew-4U7"/>
                             <constraint firstAttribute="height" constant="48" id="e4d-vv-bBA"/>
@@ -359,7 +359,7 @@ DQ
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-aU-e2J">
-                        <rect key="frame" x="601" y="243" width="80" height="55"/>
+                        <rect key="frame" x="594" y="246" width="80" height="55"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="76" id="CGP-E6-pZM"/>
                             <constraint firstAttribute="height" constant="50" id="nfR-je-hx8"/>
@@ -372,7 +372,7 @@ Button</string>
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-ET-ajG">
-                        <rect key="frame" x="601" y="172" width="80" height="55"/>
+                        <rect key="frame" x="594" y="175" width="80" height="55"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="0vX-vt-nB3"/>
                             <constraint firstAttribute="width" constant="76" id="djk-kI-Equ"/>
@@ -385,7 +385,7 @@ Button</string>
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="OnC-wu-Ny9">
-                        <rect key="frame" x="471" y="244" width="60" height="53"/>
+                        <rect key="frame" x="464" y="247" width="60" height="53"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48" id="oOY-6v-PLf"/>
                             <constraint firstAttribute="width" constant="56" id="t1T-WH-9im"/>
@@ -1138,5 +1138,6 @@ Button</string>
     <resources>
         <image name="NSAddTemplate" width="11" height="11"/>
         <image name="NSFolder" width="32" height="32"/>
+        <image name="NSNetwork" width="32" height="32"/>
     </resources>
 </document>
