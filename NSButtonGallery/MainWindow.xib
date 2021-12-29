@@ -317,7 +317,7 @@ DQ
                             <constraint firstAttribute="width" constant="48" id="euH-Wn-NsO"/>
                             <constraint firstAttribute="height" constant="48" id="gEd-bx-dzj"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSNetwork" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kTL-WD-n0r">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSNetwork" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kTL-WD-n0r">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -328,7 +328,7 @@ DQ
                             <constraint firstAttribute="height" constant="48" id="Mga-T9-IbZ"/>
                             <constraint firstAttribute="width" constant="48" id="Q1C-Wm-ndW"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSNetwork" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ybg-1q-WXh">
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="NSNetwork" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Ybg-1q-WXh">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -401,6 +401,28 @@ Button</string>
                     <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" state="on" translatesAutoresizingMaskIntoConstraints="NO" id="SfG-dw-unR">
                         <rect key="frame" x="789" y="377" width="42" height="24"/>
                     </switch>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="iNI-xs-brh">
+                        <rect key="frame" x="150" y="182" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="5aK-Fy-xTr"/>
+                            <constraint firstAttribute="height" constant="48" id="i1P-Eo-ztH"/>
+                        </constraints>
+                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSNetwork" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="pav-Ki-l5B">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="6Xf-e7-Ywi">
+                        <rect key="frame" x="150" y="250" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="bJD-vl-GxC"/>
+                            <constraint firstAttribute="width" constant="48" id="bnA-VQ-PFe"/>
+                        </constraints>
+                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="NSNetwork" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="eFg-6h-w48">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="U0V-Lz-JGz" firstAttribute="top" secondItem="G3E-yA-W2J" secondAttribute="bottom" constant="20" id="0Fe-rh-sA9"/>
@@ -427,14 +449,17 @@ Button</string>
                     <constraint firstItem="Eho-ID-TeS" firstAttribute="top" secondItem="alg-Ci-Nyo" secondAttribute="bottom" constant="22" id="9hv-SH-sSI"/>
                     <constraint firstItem="ueW-DR-u49" firstAttribute="centerY" secondItem="ip6-Oy-unX" secondAttribute="centerY" id="BIi-Rv-NKb"/>
                     <constraint firstItem="B4B-Db-q1V" firstAttribute="leading" secondItem="p4R-zM-Ice" secondAttribute="trailing" constant="157" id="BQ3-0L-y1K"/>
+                    <constraint firstItem="6Xf-e7-Ywi" firstAttribute="centerY" secondItem="B4B-Db-q1V" secondAttribute="centerY" id="BTI-bL-91E"/>
                     <constraint firstItem="FWr-Tr-Qab" firstAttribute="centerX" secondItem="BfP-74-Q4c" secondAttribute="centerX" id="Bnn-Mb-S9M"/>
                     <constraint firstItem="1C2-7t-O2e" firstAttribute="leading" secondItem="YXq-JI-RJ1" secondAttribute="trailing" constant="105" id="EJB-w7-hiV"/>
                     <constraint firstItem="SfG-dw-unR" firstAttribute="top" secondItem="lVx-N7-w79" secondAttribute="bottom" constant="20" id="FFc-dS-dix"/>
                     <constraint firstItem="gZx-Zl-rAU" firstAttribute="centerX" secondItem="dBp-4e-PyV" secondAttribute="centerX" id="FHd-zJ-3DJ"/>
                     <constraint firstItem="ueW-DR-u49" firstAttribute="leading" secondItem="ip6-Oy-unX" secondAttribute="trailing" constant="82" id="Fh0-oy-qH6"/>
+                    <constraint firstItem="CWj-Ca-Goe" firstAttribute="leading" secondItem="iNI-xs-brh" secondAttribute="trailing" constant="20" id="GD3-HB-TjN"/>
                     <constraint firstItem="CWj-Ca-Goe" firstAttribute="top" secondItem="B4B-Db-q1V" secondAttribute="bottom" constant="20" id="Gm9-4r-HAV"/>
                     <constraint firstItem="ip6-Oy-unX" firstAttribute="centerY" secondItem="Id4-sA-LlA" secondAttribute="centerY" id="HX0-In-x6K"/>
                     <constraint firstItem="lVx-N7-w79" firstAttribute="centerY" secondItem="JZ4-xf-xRv" secondAttribute="centerY" id="Hx7-jp-KuS"/>
+                    <constraint firstItem="6Xf-e7-Ywi" firstAttribute="centerX" secondItem="iNI-xs-brh" secondAttribute="centerX" id="Hzb-A5-ZsY"/>
                     <constraint firstItem="et0-vS-UbQ" firstAttribute="centerX" secondItem="UPR-fo-qhS" secondAttribute="centerX" id="K4b-Eb-Erg"/>
                     <constraint firstItem="sTR-6p-0Og" firstAttribute="centerX" secondItem="8iy-JJ-q0o" secondAttribute="centerX" constant="4" id="LGf-wf-6Lj"/>
                     <constraint firstItem="TTD-7S-RuJ" firstAttribute="centerY" secondItem="Eho-ID-TeS" secondAttribute="centerY" id="LfF-Cb-y7m"/>
@@ -496,6 +521,7 @@ Button</string>
                     <constraint firstItem="xyN-hm-0ic" firstAttribute="leading" secondItem="BfP-74-Q4c" secondAttribute="trailing" constant="32" id="xNa-sJ-fvL"/>
                     <constraint firstItem="mrC-OW-rmX" firstAttribute="centerX" secondItem="pxF-Oc-JDO" secondAttribute="centerX" id="zGb-yx-Uur"/>
                     <constraint firstItem="Cov-Cf-mlM" firstAttribute="centerX" secondItem="N13-IH-l3N" secondAttribute="centerX" id="zaa-Cx-SJe"/>
+                    <constraint firstItem="iNI-xs-brh" firstAttribute="centerY" secondItem="CWj-Ca-Goe" secondAttribute="centerY" id="zdp-3s-Cac"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="411.5" y="55"/>
