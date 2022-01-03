@@ -63,17 +63,20 @@
         button.target = self;
         button.action = @selector(executeAction:);
         button.image = [NSImage imageNamed:NSImageNameColumnViewTemplate];
-        if ([itemIdentifier hasPrefix:@"Columns1"] || [itemIdentifier hasPrefix:@"Columns2"]) {
-            button.bordered = YES;
-        }
+        button.bordered = YES;
         button.bezelStyle = NSBezelStyleTexturedRounded;
         item.view = button;
-        
+
+        int i = [[[itemIdentifier substringFromIndex:7] substringToIndex:1] intValue];
+        int h = 20 * i - 10;
+
+        NSLog(@"%d %d", i, h);
+
         if ([itemIdentifier hasSuffix:@"a"]) {
-            button.frame = NSMakeRect(0, 0, 50, 40);
+            button.frame = NSMakeRect(0, 0, 50, h);
         } else if ([itemIdentifier hasSuffix:@"b"]) {
-            item.minSize = CGSizeMake(50, 60);
-            item.maxSize = CGSizeMake(50, 60);
+            item.minSize = CGSizeMake(50, h);
+            item.maxSize = CGSizeMake(50, h);
         }
     }
     
