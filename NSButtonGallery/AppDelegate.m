@@ -25,11 +25,11 @@
 }
 
 - (NSArray<NSToolbarItemIdentifier> *)toolbarDefaultItemIdentifiers:(NSToolbar *)toolbar {
-    return @[@"Network", @"Accounts", @"Columns1", @"Columns2", @"Columns3", @"Columns4"];
+    return [self toolbarAllowedItemIdentifiers:toolbar];
 }
 
 - (NSArray<NSToolbarItemIdentifier> *)toolbarAllowedItemIdentifiers:(NSToolbar *)toolbar {
-    return @[@"Network", @"Accounts", @"Columns1", @"Columns2", @"Columns3", @"Columns4"];
+    return @[@"Network", @"Accounts1", @"Accounts2", @"Accounts3", @"Accounts4", @"Columns1", @"Columns2", @"Columns3", @"Columns4", @"Columns1a", @"Columns2a", @"Columns3a", @"Columns4a", @"Columns1b", @"Columns2b", @"Columns3b", @"Columns4b"];
 }
 
 - (NSToolbarItem *)toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSToolbarItemIdentifier)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag {
@@ -41,21 +41,40 @@
     item.paletteLabel = itemIdentifier;
 
     if (@available(macOS 10.15, *)) {
-        item.bordered = ([itemIdentifier isEqualTo:@"Accounts"] || [itemIdentifier isEqualTo:@"Columns2"] || [itemIdentifier isEqualTo:@"Columns4"]);
+        item.bordered = ([itemIdentifier hasPrefix:@"Accounts"] || [itemIdentifier hasPrefix:@"Columns2"] || [itemIdentifier hasPrefix:@"Columns4"]);
     }
 
     if ([itemIdentifier isEqualTo:@"Network"]) {
         item.image = [NSImage imageNamed:NSImageNameNetwork];
-    } else if ([itemIdentifier isEqualTo:@"Accounts"]) {
+    } else if ([itemIdentifier hasPrefix:@"Accounts"]) {
         item.image = [NSImage imageNamed:NSImageNameUserAccounts];
+        if ([itemIdentifier isEqualTo:@"Accounts1"]) {
+            item.minSize = CGSizeMake(30, 20);
+            item.maxSize = CGSizeMake(30, 20);
+        } else if ([itemIdentifier isEqualTo:@"Accounts2"]) {
+            item.minSize = CGSizeMake(50, 60);
+            item.maxSize = CGSizeMake(50, 60);
+        } else if ([itemIdentifier isEqualTo:@"Accounts3"]) {
+            item.minSize = CGSizeMake(40, 60);
+            item.maxSize = CGSizeMake(40, 60);
+        }
     } else {
         NSButton *button = [[NSButton alloc] init];
         button.target = self;
         button.action = @selector(executeAction:);
         button.image = [NSImage imageNamed:NSImageNameColumnViewTemplate];
-        button.bordered = ([itemIdentifier isEqualTo:@"Columns1"] || [itemIdentifier isEqualTo:@"Columns2"]);
+        if ([itemIdentifier hasPrefix:@"Columns1"] || [itemIdentifier hasPrefix:@"Columns2"]) {
+            button.bordered = YES;
+        }
         button.bezelStyle = NSBezelStyleTexturedRounded;
         item.view = button;
+        
+        if ([itemIdentifier hasSuffix:@"a"]) {
+            button.frame = NSMakeRect(0, 0, 50, 40);
+        } else if ([itemIdentifier hasSuffix:@"b"]) {
+            item.minSize = CGSizeMake(50, 60);
+            item.maxSize = CGSizeMake(50, 60);
+        }
     }
     
     return item;
