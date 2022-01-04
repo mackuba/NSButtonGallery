@@ -30,21 +30,29 @@
             i2 = i;
         }
 
+        NSArray *colors = @[
+            [NSColor systemRedColor],
+            [NSColor systemBlueColor],
+            [NSColor systemGreenColor],
+            [NSColor systemTealColor],
+            [NSColor systemPinkColor],
+            [NSColor systemIndigoColor]
+        ];
+
         for (int k = 0; k <= 7; k++) {
             NSButtonType buttonType = (NSButtonType) k;
 
             NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(40 + 100 * k, -50 + 70 * i2, 80, 50)];
             if (bezelStyle == NSBezelStyleDisclosure || bezelStyle == NSBezelStyleHelpButton || bezelStyle == NSBezelStyleRoundedDisclosure) {
                 [button setTitle:@""];
-            } else if (bezelStyle == NSBezelStyleCircular) {
-                [button setTitle:@"B"];
-                [button setAlternateTitle:@"X"];
             } else {
-                [button setTitle:@"Button"];
-                [button setAlternateTitle:@"Boom!"];
+                [button setImage:[NSImage imageNamed:NSImageNameNetwork]];
+                [button setAlternateImage:[NSImage imageNamed:NSImageNameBonjour]];
             }
             [button setBezelStyle:bezelStyle];
             [button setButtonType:buttonType];
+            [button setBordered:NO];
+            [button setContentTintColor:[colors objectAtIndex:((i+k) % 6)]];
             [self.window.contentView addSubview:button];
         }
     }
